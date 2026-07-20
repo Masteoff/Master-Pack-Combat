@@ -1209,12 +1209,11 @@
       pickerSat = hsv.s;
       pickerVal = hsv.v;
       drawSVSquare();
-      updateCursorsFromState();
       updatePreviewAndHex(hex);
       applyParticleColor(hex);
     }
 
-    // Initialisation avec la couleur par defaut
+    // Initialisation avec la couleur par defaut (sans toucher au panneau, cache pour le moment)
     drawHueStrip();
     setStateFromHex(currentParticleColor);
 
